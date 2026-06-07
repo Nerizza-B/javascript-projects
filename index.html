@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header id="topbar">
+      <button
+        id="sidebar-toggle"
+        aria-label="Toggle Sidebar"
+        aria-expanded="true"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#/" id="logo" aria-label="Home">
+        <span class="logo-text">JS Projects</span>
+      </a>
+      <div id="top-bar-end">
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <aside id="sidebar" aria-label="Project Navigation">
+      <div id="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        <input
+          id="search-box"
+          type="text"
+          placeholder="Search projects…"
+          aria-label="Search projects"
+          autocomplete="off"
+        />
+      </div>
+      <nav id="category-nav" aria-label="Filter by category">
+        <button class="category-btn active" data-category="all">
+          <i class="fa-solid fa-grip"></i> All
+        </button>
+        <button class="category-btn" data-category="tools">
+          <i class="fa-solid fa-wrench"></i> Tools
+        </button>
+        <button class="category-btn" data-category="games">
+          <i class="fa-solid fa-gamepad"></i> Games
+        </button>
+        <button class="category-btn" data-category="ui">
+          <i class="fa-solid fa-layer-group"></i> UI Components
+        </button>
+        <button class="category-btn" data-category="visualizers">
+          <i class="fa-solid fa-chart-line"></i> Visualizers
+        </button>
+      </nav>
+      <p id="project-count">0 projects</p>
+    </aside>
+
+    <div id="overlay" hidden aria-hidden="true"></div>
+
+    <main id="main">
+      <section id="home-grid" aria-label="Project grid">
+        <!-- Cards injected by app.js -->
+      </section>
+
+      <section id="project-viewport" hidden aria-label="Active project">
+        <header id="project-header">
+          <div id="project-meta">
+            <h1 id="project-title"></h1>
+            <span id="project-category-badge"></span>
+          </div>
+          <button id="back-btn" aria-label="Back to project list">
+            <i class="fa-solid fa-arrow-left"></i
+            ><span class="back-label"> Back</span>
+          </button>
+        </header>
+        <div id="project-overview">
+          <p id="overview-desc"></p>
+          <div id="overview-meta">
+            <div id="overview-tags"></div>
+            <span id="overview-date"></span>
+          </div>
+        </div>
+
+        <div id="project-stage">
+          <!-- Project HTML fragment injected here by loader.js -->
+        </div>
+      </section>
+    </main>
+
+    <!-- jQuery — available as $ in app.js shell code; not for use inside projects/ -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
