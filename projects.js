@@ -32,6 +32,29 @@ const projects = [
     thumbnail: null,
     icon: "fa-solid fa-key",
   },
+  {
+    id: "temperature-converter",
+    name: "Temperature Converter",
+    category: "tools",
+    description:
+      "Real-time conversion between Celsius, Fahrenheit, and Kelvin.",
+    tags: ["temperature", "convert", "celsius", "fahrenheit", "kelvin"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-temperature-half",
+  },
+  {
+    id: "word-counter",
+    name: "Word Counter",
+    category: "tools",
+    description:
+      "Count words, characters, sentences, and estimated reading time.",
+    tags: ["text", "words", "count", "reading"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-font",
+  },
+
   // ── Games ────────────────────────────────────────────────────
   // ── UI Components ────────────────────────────────────────────
   // ── Visualizers ──────────────────────────────────────────────────

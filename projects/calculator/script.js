@@ -2,6 +2,10 @@ let display = "";
 const valEl = document.getElementById("calc-val");
 const exprEl = document.getElementById("calc-expr");
 
+function normalizeExpression(expr) {
+  return expr.replace(/×/g, "*").replace(/÷/g, "/");
+}
+
 function updateDisplay() {
   valEl.textContent = display || "0";
 }
@@ -62,14 +66,16 @@ document.querySelector(".calc-keys").addEventListener("click", (e) => {
     try {
       exprEl.textContent = display + " =";
 
+      const expression = normalizeExpression(display);
+
       // prevent divide by zero BEFORE eval (better UX)
-      if (/\/0(?!\.)/.test(display)) {
+      if (/\/0(?!\.)/.test(expression)) {
         setError("Cannot divide by 0");
         updateDisplay();
         return;
       }
 
-      const result = eval(display);
+      const result = eval(expression);
 
       if (result === Infinity || result === -Infinity) {
         setError("Cannot divide by 0");

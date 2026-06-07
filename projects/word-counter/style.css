@@ -1,0 +1,90 @@
+[data-project="word-counter"] {
+  display: flex;
+  justify-content: center;
+  padding: 32px 20px;
+  min-height: 70vh;
+}
+
+[data-project="word-counter"] .wc-wrap {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+[data-project="word-counter"] .wc-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+[data-project="word-counter"] .wc-textarea {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  padding: 16px;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 150ms;
+}
+
+[data-project="word-counter"] .wc-textarea:focus {
+  border-color: var(--accent);
+}
+
+[data-project="word-counter"] .wc-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+[data-project="word-counter"] .wc-stat {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+[data-project="word-counter"] .wc-num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="word-counter"] .wc-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text2);
+}
+
+[data-project="word-counter"] .wc-clear {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text2);
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition:
+    background 150ms,
+    color 150ms;
+}
+
+[data-project="word-counter"] .wc-clear:hover {
+  background: #ef4444;
+  color: #fff;
+  border-color: #ef4444;
+}
