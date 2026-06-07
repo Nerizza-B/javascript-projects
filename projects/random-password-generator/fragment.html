@@ -1,0 +1,47 @@
+<div class="project-root" data-project="random-password-generator">
+  <div class="pg-card">
+    <h2 class="pg-title">Password Generator</h2>
+    <div class="pg-output">
+      <span class="pg-password" id="pg-password">Click Generate</span>
+      <button class="pg-copy" id="pg-copy" title="Copy to clipboard">
+        <i class="fa-solid fa-copy"></i>
+      </button>
+    </div>
+    <div class="pg-strength-wrap">
+      <div class="pg-strength-label">
+        <span>Strength</span>
+        <span id="pg-strength-text">—</span>
+      </div>
+      <div class="pg-strength" id="pg-strength">
+        <div id="pg-strength-fill"></div>
+      </div>
+    </div>
+    <div class="pg-controls">
+      <label class="pg-label">
+        Length: <strong id="pg-len-val">16</strong>
+        <input
+          class="pg-range"
+          type="range"
+          id="pg-len"
+          min="6"
+          max="24"
+          value="16"
+        />
+      </label>
+      <label class="pg-check"
+        ><input type="checkbox" id="pg-upper" checked /> Uppercase (A–Z)</label
+      >
+      <label class="pg-check"
+        ><input type="checkbox" id="pg-lower" checked /> Lowercase (a–z)</label
+      >
+      <label class="pg-check"
+        ><input type="checkbox" id="pg-num" checked /> Numbers (0–9)</label
+      >
+      <label class="pg-check"
+        ><input type="checkbox" id="pg-sym" checked /> Symbols (!@#$…)</label
+      >
+    </div>
+    <button class="pg-gen" id="pg-gen">Generate Password</button>
+    <p class="pg-copied" id="pg-copied"></p>
+  </div>
+</div>

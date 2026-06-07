@@ -1,33 +1,47 @@
 [data-project="age-calculator"] {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 40px 20px;
   min-height: 70vh;
 }
+
+/* CARD WRAPPER (new improvement) */
 [data-project="age-calculator"] .age-wrap {
   width: 100%;
   max-width: 420px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+
 [data-project="age-calculator"] .age-title {
   font-size: 1.3rem;
   font-weight: 700;
   text-align: center;
   color: var(--text);
 }
+
 [data-project="age-calculator"] .age-field {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 [data-project="age-calculator"] .age-label {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text2);
 }
+
 [data-project="age-calculator"] .age-input {
   background: var(--bg3);
   border: 1px solid var(--border);
@@ -41,9 +55,11 @@
   transition: border-color 150ms;
   color-scheme: light dark;
 }
+
 [data-project="age-calculator"] .age-input:focus {
   border-color: var(--accent);
 }
+
 [data-project="age-calculator"] .age-btn {
   background: var(--accent);
   border: none;
@@ -55,13 +71,17 @@
   cursor: pointer;
   transition: opacity 150ms;
 }
+
 [data-project="age-calculator"] .age-btn:hover {
   opacity: 0.85;
 }
+
+/* CARDS ROW */
 [data-project="age-calculator"] .age-cards {
   display: flex;
   gap: 12px;
 }
+
 [data-project="age-calculator"] .age-card {
   flex: 1;
   background: var(--bg3);
@@ -72,22 +92,33 @@
   flex-direction: column;
   align-items: center;
   gap: 6px;
+
+  transition:
+    transform 150ms ease,
+    border-color 150ms ease;
 }
+
+[data-project="age-calculator"] .age-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
 [data-project="age-calculator"] .age-val {
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--text);
 }
+
 [data-project="age-calculator"] .age-key {
   font-size: 0.75rem;
   color: var(--text2);
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
+
 [data-project="age-calculator"] .age-extra {
   text-align: center;
   color: var(--text2);
   font-size: 0.9rem;
-
-  margin: 12px;
+  margin: 12px 0 0;
 }

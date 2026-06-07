@@ -21,6 +21,17 @@ const projects = [
     thumbnail: null,
     icon: "fa-solid fa-calculator",
   },
+  {
+    id: "random-password-generator",
+    name: "Password Generator",
+    category: "tools",
+    description:
+      "Generate secure passwords with custom length and character sets.",
+    tags: ["password", "security", "random", "generator"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-key",
+  },
   // ── Games ────────────────────────────────────────────────────
   // ── UI Components ────────────────────────────────────────────
   // ── Visualizers ──────────────────────────────────────────────────

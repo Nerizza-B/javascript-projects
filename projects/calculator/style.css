@@ -10,8 +10,7 @@
   border-radius: 20px;
   overflow: hidden;
   width: 320px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
 }
 
 [data-project="calculator"] .calc-display {
@@ -47,6 +46,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   background: var(--border);
+  border-top: 1px solid var(--border);
 }
 
 [data-project="calculator"] .calc-btn {

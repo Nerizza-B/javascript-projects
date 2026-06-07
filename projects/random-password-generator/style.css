@@ -1,0 +1,160 @@
+[data-project="random-password-generator"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+[data-project="random-password-generator"] .pg-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+[data-project="random-password-generator"] .pg-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+[data-project="random-password-generator"] .pg-output {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+[data-project="random-password-generator"] .pg-password {
+  flex: 1;
+  font-family: "Courier New", monospace;
+  font-size: 1.05rem;
+  color: var(--text);
+  word-break: break-all;
+}
+
+[data-project="random-password-generator"] .pg-copy {
+  color: var(--text2);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 150ms;
+  padding: 4px;
+}
+
+[data-project="random-password-generator"] .pg-copy:hover {
+  opacity: 1;
+}
+
+/* =========================
+   STRENGTH SECTION (NEW)
+   ========================= */
+
+[data-project="random-password-generator"] .pg-strength-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+[data-project="random-password-generator"] .pg-strength-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text2);
+}
+
+[data-project="random-password-generator"] .pg-strength-label span:last-child {
+  font-weight: 600;
+  color: var(--text);
+}
+
+[data-project="random-password-generator"] .pg-strength {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+/* animated fill bar */
+[data-project="random-password-generator"] #pg-strength-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: #ef4444;
+  transition:
+    width 300ms ease,
+    background 300ms ease;
+}
+
+[data-project="random-password-generator"] .pg-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+[data-project="random-password-generator"] .pg-label {
+  color: var(--text2);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+[data-project="random-password-generator"] .pg-label strong {
+  color: var(--text);
+}
+
+[data-project="random-password-generator"] .pg-range {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+[data-project="random-password-generator"] .pg-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text2);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+[data-project="random-password-generator"] .pg-check input {
+  accent-color: var(--accent);
+  width: 16px;
+  height: 16px;
+}
+
+[data-project="random-password-generator"] .pg-gen {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 150ms;
+}
+
+[data-project="random-password-generator"] .pg-gen:hover {
+  opacity: 0.85;
+}
+
+[data-project="random-password-generator"] .pg-copied {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #4ade80;
+  min-height: 1.2em;
+}

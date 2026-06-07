@@ -28,7 +28,13 @@ document.querySelector(".calc-keys").addEventListener("click", (e) => {
 
   // Operators
   else if ("+-*/".includes(action)) {
-    display += action;
+    const lastChar = display.slice(-1);
+
+    if (!"0123456789".includes(lastChar)) return;
+
+    if (action === "*") display += "×";
+    else if (action === "/") display += "÷";
+    else display += action;
   }
 
   // Decimal
