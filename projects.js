@@ -54,6 +54,17 @@ const projects = [
     thumbnail: null,
     icon: "fa-solid fa-font",
   },
+  {
+    id: "color-picker",
+    name: "Color Picker",
+    category: "tools",
+    description:
+      "Pick a color and copy its HEX, RGB, or HSL value to clipboard.",
+    tags: ["color", "hex", "rgb", "hsl", "clipboard", "design"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-palette",
+  },
 
   // ── Games ────────────────────────────────────────────────────
   // ── UI Components ────────────────────────────────────────────

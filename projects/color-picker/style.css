@@ -1,0 +1,102 @@
+[data-project="color-picker"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+[data-project="color-picker"] .cp-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+[data-project="color-picker"] .cp-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="color-picker"] .cp-preview {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(0,0,0,0.2);
+  transition: background 100ms, box-shadow 100ms;
+}
+
+[data-project="color-picker"] .cp-input {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  outline: none;
+}
+
+[data-project="color-picker"] .cp-values {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+[data-project="color-picker"] .cp-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+[data-project="color-picker"] .cp-fmt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text2);
+  text-transform: uppercase;
+  width: 32px;
+  flex-shrink: 0;
+}
+
+[data-project="color-picker"] .cp-val {
+  flex: 1;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+[data-project="color-picker"] .cp-copy {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text2);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background 150ms, color 150ms;
+}
+
+[data-project="color-picker"] .cp-copy:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+[data-project="color-picker"] .cp-copied {
+  font-size: 0.82rem;
+  color: #4ade80;
+  min-height: 1.2em;
+}
