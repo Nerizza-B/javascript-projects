@@ -1,0 +1,22 @@
+<div class="project-root" data-project="json-formatter">
+  <div class="jf-wrap">
+    <h2 class="jf-title">JSON Formatter</h2>
+    <div class="jf-toolbar">
+      <button class="jf-btn" id="jf-prettify">Prettify</button>
+      <button class="jf-btn" id="jf-minify">Minify</button>
+      <button class="jf-btn secondary" id="jf-copy">Copy</button>
+      <button class="jf-btn secondary" id="jf-clear">Clear</button>
+    </div>
+    <div class="jf-panes">
+      <div class="jf-pane">
+        <label class="jf-label">Input JSON</label>
+        <textarea class="jf-textarea" id="jf-input" placeholder='{"key": "value"}'></textarea>
+      </div>
+      <div class="jf-pane">
+        <label class="jf-label">Output</label>
+        <pre class="jf-output" id="jf-output"></pre>
+      </div>
+    </div>
+    <p class="jf-status" id="jf-status"></p>
+  </div>
+</div>

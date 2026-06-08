@@ -1,0 +1,51 @@
+[data-project="tip-calculator"] {
+  display: flex; justify-content: center;
+  padding: 40px 20px; min-height: 70vh;
+}
+[data-project="tip-calculator"] .tip-wrap {
+  width: 100%; max-width: 440px;
+  display: flex; flex-direction: column; gap: 20px;
+}
+[data-project="tip-calculator"] .tip-title {
+  font-size: 1.3rem; font-weight: 700; text-align: center; color: var(--text);
+}
+[data-project="tip-calculator"] .tip-field {
+  display: flex; flex-direction: column; gap: 8px;
+}
+[data-project="tip-calculator"] .tip-label {
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text2);
+}
+[data-project="tip-calculator"] .tip-input {
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text); font-size: 1rem; padding: 12px 14px; outline: none;
+  font-family: inherit; transition: border-color 150ms; width: 100%; box-sizing: border-box;
+}
+[data-project="tip-calculator"] .tip-input:focus { border-color: var(--accent); }
+[data-project="tip-calculator"] .tip-presets {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+[data-project="tip-calculator"] .tip-preset {
+  background: none; border: 1px solid var(--border); border-radius: 6px;
+  color: var(--text2); font-size: 0.85rem; padding: 6px 12px; cursor: pointer;
+  transition: all 150ms; font-family: inherit;
+}
+[data-project="tip-calculator"] .tip-preset:hover,
+[data-project="tip-calculator"] .tip-preset.active {
+  background: var(--accent); border-color: var(--accent); color: var(--bg); font-weight: 600;
+}
+[data-project="tip-calculator"] .tip-results {
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; display: flex; flex-direction: column; gap: 10px;
+}
+[data-project="tip-calculator"] .tip-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.9rem; color: var(--text2);
+}
+[data-project="tip-calculator"] .tip-row--big {
+  color: var(--text); font-weight: 700; font-size: 1rem;
+  padding-top: 10px; border-top: 1px solid var(--border);
+}
+[data-project="tip-calculator"] .tip-val {
+  font-weight: 700; color: var(--text); font-size: 1rem;
+}
+[data-project="tip-calculator"] .tip-row--big .tip-val { font-size: 1.3rem; }

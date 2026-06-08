@@ -65,6 +65,49 @@ const projects = [
     thumbnail: null,
     icon: "fa-solid fa-palette",
   },
+  {
+    id: "unit-converter",
+    name: "Unit Converter",
+    category: "tools",
+    description: "Convert length, weight, and volume units with live updates.",
+    tags: ["units", "convert", "length", "weight", "volume"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-arrows-left-right",
+  },
+  {
+    id: "json-formatter",
+    name: "JSON Formatter",
+    category: "tools",
+    description:
+      "Paste JSON to prettify or minify it, with syntax error highlighting.",
+    tags: ["json", "format", "prettify", "minify", "developer"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-code",
+  },
+  {
+    id: "tip-calculator",
+    name: "Tip Calculator",
+    category: "tools",
+    description:
+      "Split the bill with custom tip percentages and per-person breakdown.",
+    tags: ["tip", "bill", "split", "restaurant", "calculator"],
+    added: "2026-04-19",
+    thumbnail: null,
+    icon: "fa-solid fa-receipt",
+  },
+  {
+    id: "loan-calculator",
+    name: "Loan Calculator",
+    category: "tools",
+    description:
+      "Calculate monthly payments, total cost, and interest for any loan.",
+    tags: ["loan", "mortgage", "interest", "finance", "calculator"],
+    added: "2026-04-19",
+    thumbnail: null,
+    icon: "fa-solid fa-hand-holding-dollar",
+  },
 
   // ── Games ────────────────────────────────────────────────────
   // ── UI Components ────────────────────────────────────────────

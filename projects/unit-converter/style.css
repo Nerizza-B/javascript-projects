@@ -1,0 +1,103 @@
+[data-project="unit-converter"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+[data-project="unit-converter"] .uc-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+[data-project="unit-converter"] .uc-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+[data-project="unit-converter"] .uc-tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+[data-project="unit-converter"] .uc-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text2);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition:
+    background 150ms,
+    color 150ms;
+}
+
+[data-project="unit-converter"] .uc-tab.active {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+[data-project="unit-converter"] .uc-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+[data-project="unit-converter"] .uc-row {
+  display: flex;
+  gap: 10px;
+}
+
+[data-project="unit-converter"] .uc-input {
+  flex: 1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 1.3rem;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 150ms;
+  min-width: 0;
+}
+
+[data-project="unit-converter"] .uc-input:focus {
+  border-color: var(--accent);
+}
+[data-project="unit-converter"] .uc-input[readonly] {
+  color: #4ade80;
+}
+
+[data-project="unit-converter"] .uc-select {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text2);
+  font-size: 0.85rem;
+  padding: 12px 32px 12px 10px; /* more space on the right */
+  outline: none;
+  cursor: pointer;
+  min-width: 110px;
+}
+
+[data-project="unit-converter"] .uc-equals {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--border);
+}

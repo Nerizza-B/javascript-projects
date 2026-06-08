@@ -1,0 +1,29 @@
+<div class="project-root" data-project="tip-calculator">
+  <div class="tip-wrap">
+    <h2 class="tip-title">Tip Calculator</h2>
+    <div class="tip-field">
+      <label class="tip-label" for="tip-bill">Bill Amount ($)</label>
+      <input class="tip-input" type="number" id="tip-bill" min="0" step="0.01" placeholder="0.00" />
+    </div>
+    <div class="tip-field">
+      <label class="tip-label">Tip Percentage</label>
+      <div class="tip-presets">
+        <button class="tip-preset" data-pct="10">10%</button>
+        <button class="tip-preset active" data-pct="15">15%</button>
+        <button class="tip-preset" data-pct="18">18%</button>
+        <button class="tip-preset" data-pct="20">20%</button>
+        <button class="tip-preset" data-pct="25">25%</button>
+      </div>
+      <input class="tip-input" type="number" id="tip-pct" min="0" max="100" step="1" value="15" placeholder="Custom %" />
+    </div>
+    <div class="tip-field">
+      <label class="tip-label" for="tip-people">Number of People</label>
+      <input class="tip-input" type="number" id="tip-people" min="1" step="1" value="1" />
+    </div>
+    <div class="tip-results">
+      <div class="tip-row"><span>Tip Amount</span><span class="tip-val" id="tip-tip">$0.00</span></div>
+      <div class="tip-row"><span>Total</span><span class="tip-val" id="tip-total">$0.00</span></div>
+      <div class="tip-row tip-row--big"><span>Per Person</span><span class="tip-val" id="tip-per">$0.00</span></div>
+    </div>
+  </div>
+</div>

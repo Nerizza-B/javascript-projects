@@ -1,0 +1,102 @@
+[data-project="json-formatter"] {
+  display: flex;
+  justify-content: center;
+  padding: 28px 20px;
+  min-height: 70vh;
+}
+
+[data-project="json-formatter"] .jf-wrap {
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+[data-project="json-formatter"] .jf-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+[data-project="json-formatter"] .jf-toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+[data-project="json-formatter"] .jf-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  color: var(--bg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: opacity 150ms;
+}
+
+[data-project="json-formatter"] .jf-btn:hover { opacity: 0.85; }
+
+[data-project="json-formatter"] .jf-btn.secondary {
+  background: var(--bg3);
+  color: var(--text2);
+  border: 1px solid var(--border);
+}
+
+[data-project="json-formatter"] .jf-btn.secondary:hover { background: var(--border); color: var(--text); }
+
+[data-project="json-formatter"] .jf-panes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  [data-project="json-formatter"] .jf-panes { grid-template-columns: 1fr; }
+}
+
+[data-project="json-formatter"] .jf-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+[data-project="json-formatter"] .jf-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text2);
+}
+
+[data-project="json-formatter"] .jf-textarea,
+[data-project="json-formatter"] .jf-output {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  padding: 14px;
+  min-height: 320px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 150ms;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+[data-project="json-formatter"] .jf-textarea:focus { border-color: var(--accent); }
+
+[data-project="json-formatter"] .jf-status {
+  font-size: 0.82rem;
+  min-height: 1.2em;
+}
+
+[data-project="json-formatter"] .jf-status.ok  { color: #4ade80; }
+[data-project="json-formatter"] .jf-status.err { color: #ef4444; }
