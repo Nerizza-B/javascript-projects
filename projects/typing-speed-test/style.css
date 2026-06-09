@@ -1,0 +1,103 @@
+[data-project="typing-speed-test"] {
+  display: flex;
+  justify-content: center;
+  padding: 28px 20px;
+  min-height: 70vh;
+}
+
+[data-project="typing-speed-test"] .ts-wrap {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+[data-project="typing-speed-test"] .ts-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+[data-project="typing-speed-test"] .ts-hud {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+[data-project="typing-speed-test"] .ts-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+[data-project="typing-speed-test"] .ts-num {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="typing-speed-test"] .ts-lbl {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text2);
+}
+
+[data-project="typing-speed-test"] .ts-passage {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text2);
+  word-break: break-word;
+  user-select: none;
+}
+
+[data-project="typing-speed-test"] .ts-passage .correct { color: #4ade80; }
+[data-project="typing-speed-test"] .ts-passage .wrong   { color: #ef4444; background: #ef444420; border-radius: 2px; }
+[data-project="typing-speed-test"] .ts-passage .cursor  {
+  border-left: 2px solid var(--accent);
+  margin-left: -1px;
+  animation: ts-blink 1s step-end infinite;
+}
+
+@keyframes ts-blink { 50% { border-color: transparent; } }
+
+[data-project="typing-speed-test"] .ts-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 14px 16px;
+  resize: none;
+  height: 80px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 150ms;
+}
+
+[data-project="typing-speed-test"] .ts-input:focus { border-color: var(--accent); }
+[data-project="typing-speed-test"] .ts-input:disabled { opacity: 0.4; }
+
+[data-project="typing-speed-test"] .ts-restart {
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  color: var(--bg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 28px;
+  cursor: pointer;
+  align-self: center;
+  transition: opacity 150ms;
+}
+
+[data-project="typing-speed-test"] .ts-restart:hover { opacity: 0.85; }

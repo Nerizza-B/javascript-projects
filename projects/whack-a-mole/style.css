@@ -1,0 +1,83 @@
+[data-project="whack-a-mole"] {
+  display: flex;
+  justify-content: center;
+  padding: 28px 20px;
+  min-height: 70vh;
+}
+
+[data-project="whack-a-mole"] .wm-wrap {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+[data-project="whack-a-mole"] .wm-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="whack-a-mole"] .wm-hud {
+  display: flex;
+  gap: 28px;
+}
+
+[data-project="whack-a-mole"] .wm-stat {
+  font-size: 0.9rem;
+  color: var(--text2);
+}
+
+[data-project="whack-a-mole"] .wm-stat strong { color: var(--text); }
+
+[data-project="whack-a-mole"] .wm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+[data-project="whack-a-mole"] .wm-hole {
+  background: var(--bg2);
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+[data-project="whack-a-mole"] .wm-mole {
+  font-size: 2.8rem;
+  transform: translateY(100%);
+  transition: transform 200ms cubic-bezier(.34,1.56,.64,1);
+  padding-bottom: 4px;
+  user-select: none;
+}
+
+[data-project="whack-a-mole"] .wm-hole.up .wm-mole {
+  transform: translateY(0%);
+}
+
+[data-project="whack-a-mole"] .wm-hole.whacked .wm-mole {
+  transform: translateY(100%) rotate(20deg);
+}
+
+[data-project="whack-a-mole"] .wm-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  color: var(--bg);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 32px;
+  cursor: pointer;
+  transition: opacity 150ms;
+}
+
+[data-project="whack-a-mole"] .wm-btn:hover { opacity: 0.85; }

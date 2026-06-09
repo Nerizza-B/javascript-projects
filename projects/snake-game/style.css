@@ -1,0 +1,101 @@
+[data-project="snake-game"] {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
+[data-project="snake-game"] .sn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 420px;
+}
+[data-project="snake-game"] .sn-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+[data-project="snake-game"] .sn-hud {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+[data-project="snake-game"] .sn-stat {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  font-size: 0.75rem;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+[data-project="snake-game"] .sn-stat + .sn-stat {
+  border-left: 1px solid var(--border);
+}
+[data-project="snake-game"] .sn-stat strong {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: monospace;
+  color: var(--text);
+  line-height: 1;
+}
+[data-project="snake-game"] .sn-canvas {
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+[data-project="snake-game"] .sn-msg {
+  font-size: 0.82rem;
+  color: var(--text2);
+  text-align: center;
+  min-height: 1.2em;
+  margin: 0;
+}
+
+/* D-pad */
+[data-project="snake-game"] .sn-dpad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+[data-project="snake-game"] .sn-dpad-mid {
+  display: flex;
+  gap: 44px;
+}
+[data-project="snake-game"] .sn-dpad-btn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 1.1rem;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: background 100ms, border-color 100ms, color 100ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  user-select: none;
+}
+[data-project="snake-game"] .sn-dpad-btn:hover,
+[data-project="snake-game"] .sn-dpad-btn:active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}

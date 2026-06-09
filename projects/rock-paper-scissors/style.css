@@ -1,0 +1,139 @@
+[data-project="rock-paper-scissors"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+[data-project="rock-paper-scissors"] .rps-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+[data-project="rock-paper-scissors"] .rps-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="rock-paper-scissors"] .rps-score {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+[data-project="rock-paper-scissors"] .rps-score-box {
+  flex: 1;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+[data-project="rock-paper-scissors"] .rps-score-box.draw {
+  background: rgba(234,179,8,0.10);
+  border-color: rgba(234,179,8,0.3);
+}
+
+[data-project="rock-paper-scissors"] .rps-score-box.loss {
+  background: rgba(244,114,182,0.10);
+  border-color: rgba(244,114,182,0.3);
+}
+
+[data-project="rock-paper-scissors"] .rps-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="rock-paper-scissors"] .rps-score-box.draw .rps-num { color: #eab308; }
+[data-project="rock-paper-scissors"] .rps-score-box.loss .rps-num { color: #f472b6; }
+
+[data-project="rock-paper-scissors"] .rps-lbl {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text2);
+}
+
+[data-project="rock-paper-scissors"] .rps-arena {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+[data-project="rock-paper-scissors"] .rps-hand {
+  font-size: 4rem;
+  transition: transform 200ms;
+}
+
+[data-project="rock-paper-scissors"] .rps-vs {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--border);
+}
+
+[data-project="rock-paper-scissors"] .rps-result {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  min-height: 1.5em;
+}
+
+[data-project="rock-paper-scissors"] .rps-choices {
+  display: flex;
+  gap: 12px;
+}
+
+[data-project="rock-paper-scissors"] .rps-choice {
+  background: var(--bg3);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+  font-size: 1.8rem;
+  padding: 16px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: border-color 150ms, transform 150ms;
+}
+
+[data-project="rock-paper-scissors"] .rps-choice span {
+  font-size: 0.7rem;
+  color: var(--text2);
+}
+
+[data-project="rock-paper-scissors"] .rps-choice:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+[data-project="rock-paper-scissors"] .rps-reset {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text2);
+  font-size: 0.8rem;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: color 150ms, border-color 150ms;
+}
+
+[data-project="rock-paper-scissors"] .rps-reset:hover { color: #ef4444; border-color: #ef4444; }
