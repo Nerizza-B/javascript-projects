@@ -1,0 +1,44 @@
+[data-project="tic-tac-toe"] {
+  display: flex; justify-content: center;
+  padding: 40px 20px; min-height: 70vh;
+}
+[data-project="tic-tac-toe"] .ttt-wrap {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+  width: 100%; max-width: 340px;
+}
+[data-project="tic-tac-toe"] .ttt-title {
+  font-size: 1.3rem; font-weight: 700; color: var(--text);
+}
+[data-project="tic-tac-toe"] .ttt-status {
+  font-size: 1rem; color: var(--text2); min-height: 1.4em; margin: 0;
+}
+[data-project="tic-tac-toe"] .ttt-board {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+  width: 280px;
+}
+[data-project="tic-tac-toe"] .ttt-cell {
+  aspect-ratio: 1; background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 10px; color: var(--text); font-size: 2.2rem; font-weight: 700;
+  cursor: pointer; transition: background 150ms; font-family: inherit;
+}
+[data-project="tic-tac-toe"] .ttt-cell:hover:not(:disabled) { background: var(--bg2); }
+[data-project="tic-tac-toe"] .ttt-cell:disabled { cursor: default; }
+[data-project="tic-tac-toe"] .ttt-cell[data-mark="O"] { color: var(--text2); }
+[data-project="tic-tac-toe"] .ttt-score {
+  display: flex; gap: 24px;
+}
+[data-project="tic-tac-toe"] .ttt-score-item {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+[data-project="tic-tac-toe"] .ttt-score-val {
+  font-size: 1.6rem; font-weight: 700; color: var(--text);
+}
+[data-project="tic-tac-toe"] .ttt-score-key {
+  font-size: 0.75rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.07em;
+}
+[data-project="tic-tac-toe"] .ttt-reset {
+  background: none; border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text2); font-size: 0.88rem; padding: 8px 20px; cursor: pointer;
+  transition: all 150ms; font-family: inherit;
+}
+[data-project="tic-tac-toe"] .ttt-reset:hover { border-color: var(--text2); color: var(--text); }

@@ -167,7 +167,7 @@ const projects = [
     category: "games",
     description: "Classic snake on an HTML5 Canvas. Eat, grow, don't crash.",
     tags: ["game", "snake", "canvas", "classic", "keyboard"],
-    added: "2026-04-18",
+    added: "2026-06-10",
     thumbnail: null,
     icon: "fa-solid fa-worm",
   },
@@ -177,11 +177,53 @@ const projects = [
     category: "games",
     description: "Multiple-choice trivia quiz with a score summary and timer.",
     tags: ["game", "quiz", "trivia", "score", "timer"],
-    added: "2026-04-18",
+    added: "2026-06-10",
     thumbnail: null,
     icon: "fa-solid fa-circle-question",
   },
+  {
+    id: "tic-tac-toe",
+    name: "Tic-Tac-Toe",
+    category: "games",
+    description: "Classic 3×3 grid game against an unbeatable minimax AI.",
+    tags: ["game", "tic-tac-toe", "ai", "classic", "strategy"],
+    added: "2026-06-10",
+    thumbnail: null,
+    icon: "fa-solid fa-xmark",
+  },
   // ── UI Components ────────────────────────────────────────────
+  {
+    id: "digital-clock",
+    name: "Digital Clock",
+    category: "ui",
+    description:
+      "Live digital clock showing hours, minutes, seconds, and AM/PM.",
+    tags: ["clock", "time", "real-time", "display"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-clock",
+  },
+  {
+    id: "stopwatch",
+    name: "Stopwatch",
+    category: "ui",
+    description:
+      "Start, stop, lap, and reset with a precision formatted display.",
+    tags: ["timer", "stopwatch", "lap", "time"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-stopwatch",
+  },
+  {
+    id: "accordion-menu",
+    name: "Accordion",
+    category: "ui",
+    description: "Animated expand/collapse FAQ-style accordion component.",
+    tags: ["accordion", "faq", "collapse", "animation", "ui"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-bars-staggered",
+  },
   // ── Visualizers ──────────────────────────────────────────────────
 ];
 

@@ -1,0 +1,52 @@
+[data-project="digital-clock"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+[data-project="digital-clock"] .dc-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+[data-project="digital-clock"] .dc-date {
+  font-size: 1rem;
+  color: var(--text2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+[data-project="digital-clock"] .dc-time {
+  font-size: clamp(3.5rem, 12vw, 6rem);
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+[data-project="digital-clock"] .dc-ampm {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text2);
+  min-height: 1.5em;
+}
+
+[data-project="digital-clock"] .dc-toggle {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text2);
+  font-size: 0.82rem;
+  padding: 6px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: border-color 150ms, color 150ms;
+}
+
+[data-project="digital-clock"] .dc-toggle:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}

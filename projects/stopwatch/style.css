@@ -1,0 +1,82 @@
+[data-project="stopwatch"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+[data-project="stopwatch"] .sw-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 400px;
+}
+
+[data-project="stopwatch"] .sw-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="stopwatch"] .sw-display {
+  font-size: clamp(2.8rem, 10vw, 4.5rem);
+  font-weight: 300;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+[data-project="stopwatch"] .sw-btns {
+  display: flex;
+  gap: 12px;
+}
+
+[data-project="stopwatch"] .sw-btn {
+  border: none;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 150ms;
+}
+
+[data-project="stopwatch"] .sw-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+[data-project="stopwatch"] .sw-btn:not(:disabled):hover { filter: brightness(1.15); }
+
+[data-project="stopwatch"] .sw-btn.start { background: #4ade80; color: #111; }
+[data-project="stopwatch"] .sw-btn.start.running { background: #f472b6; color: #fff; }
+[data-project="stopwatch"] .sw-btn.lap   { background: var(--bg3); color: var(--text2); }
+[data-project="stopwatch"] .sw-btn.reset { background: var(--bg3); color: var(--text2); }
+
+[data-project="stopwatch"] .sw-laps {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+[data-project="stopwatch"] .sw-laps li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  padding: 8px 14px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text2);
+}
+
+[data-project="stopwatch"] .sw-laps li span { color: var(--text); font-variant-numeric: tabular-nums; }
