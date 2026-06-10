@@ -1,0 +1,137 @@
+[data-project="quiz-app"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+[data-project="quiz-app"] .qa-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+[data-project="quiz-app"] .qa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-project="quiz-app"] .qa-progress {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+[data-project="quiz-app"] .qa-timer {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--bg3);
+  border-radius: 99px;
+  padding: 4px 12px;
+  transition: color 300ms;
+}
+
+[data-project="quiz-app"] .qa-timer.urgent { color: #ef4444; background: rgba(239,68,68,0.1); }
+
+[data-project="quiz-app"] .qa-bar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+[data-project="quiz-app"] .qa-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 1s linear;
+  border-radius: 2px;
+}
+
+[data-project="quiz-app"] .qa-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 3em;
+}
+
+[data-project="quiz-app"] .qa-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+[data-project="quiz-app"] .qa-choice {
+  background: var(--bg3);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+  padding: 14px 18px;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 150ms, background 150ms;
+}
+
+[data-project="quiz-app"] .qa-choice:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--bg2);
+}
+
+[data-project="quiz-app"] .qa-choice.correct {
+  border-color: #4ade80;
+  background: rgba(74,222,128,0.1);
+  color: #4ade80;
+}
+
+[data-project="quiz-app"] .qa-choice.wrong {
+  border-color: #ef4444;
+  background: rgba(239,68,68,0.1);
+  color: #ef4444;
+}
+
+[data-project="quiz-app"] .qa-result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+[data-project="quiz-app"] .qa-score-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+[data-project="quiz-app"] .qa-score-val {
+  font-size: 1rem;
+  color: var(--text2);
+}
+
+[data-project="quiz-app"] .qa-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  color: var(--bg);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: opacity 150ms;
+  margin-top: 4px;
+}
+
+[data-project="quiz-app"] .qa-btn:hover { opacity: 0.85; }

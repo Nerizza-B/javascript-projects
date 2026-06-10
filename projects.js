@@ -161,7 +161,26 @@ const projects = [
     thumbnail: null,
     icon: "fa-solid fa-hammer",
   },
-
+  {
+    id: "snake-game",
+    name: "Snake Game",
+    category: "games",
+    description: "Classic snake on an HTML5 Canvas. Eat, grow, don't crash.",
+    tags: ["game", "snake", "canvas", "classic", "keyboard"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-worm",
+  },
+  {
+    id: "quiz-app",
+    name: "Quiz App",
+    category: "games",
+    description: "Multiple-choice trivia quiz with a score summary and timer.",
+    tags: ["game", "quiz", "trivia", "score", "timer"],
+    added: "2026-04-18",
+    thumbnail: null,
+    icon: "fa-solid fa-circle-question",
+  },
   // ── UI Components ────────────────────────────────────────────
   // ── Visualizers ──────────────────────────────────────────────────
 ];
