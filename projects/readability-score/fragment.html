@@ -1,0 +1,51 @@
+<div class="project-root" data-project="readability-score">
+  <div class="rs-wrap">
+    <div class="rs-header">
+      <h2 class="rs-title">Readability Score</h2>
+      <p class="rs-sub">
+        Analyzes text using the Flesch Reading Ease formula. Results update as
+        you type.
+      </p>
+    </div>
+
+    <textarea
+      class="rs-textarea"
+      id="rs-text"
+      rows="7"
+      placeholder="Paste or type your text here to analyze readability…"
+    ></textarea>
+
+    <div class="rs-results" id="rs-results">
+      <div class="rs-cards">
+        <div class="rs-card">
+          <div class="rs-card-val" id="rs-ease">—</div>
+          <div class="rs-card-label">Reading Ease</div>
+        </div>
+        <div class="rs-card">
+          <div class="rs-card-val" id="rs-grade">—</div>
+          <div class="rs-card-label">Grade Level</div>
+        </div>
+        <div class="rs-card">
+          <div class="rs-card-val" id="rs-words">—</div>
+          <div class="rs-card-label">Words</div>
+        </div>
+        <div class="rs-card">
+          <div class="rs-card-val" id="rs-sentences">—</div>
+          <div class="rs-card-label">Sentences</div>
+        </div>
+      </div>
+      <div class="rs-level-box">
+        <div class="rs-level-label" id="rs-level-label">
+          Paste text above to see score
+        </div>
+        <div class="rs-level-bar">
+          <div class="rs-level-fill" id="rs-level-fill" style="width: 0%"></div>
+        </div>
+        <div class="rs-level-range">
+          <span>0 — Very Difficult</span>
+          <span>100 — Very Easy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

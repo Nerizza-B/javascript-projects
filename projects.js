@@ -108,7 +108,72 @@ const projects = [
     thumbnail: null,
     icon: "fa-solid fa-hand-holding-dollar",
   },
-
+  {
+    id: "bmi-calculator",
+    name: "BMI Calculator",
+    category: "tools",
+    description:
+      "Calculate your Body Mass Index with metric or imperial inputs and health category.",
+    tags: ["bmi", "health", "weight", "height", "calculator"],
+    added: "2026-06-11",
+    thumbnail: null,
+    icon: "fa-solid fa-weight-scale",
+  },
+  {
+    id: "currency-converter",
+    name: "Currency Converter",
+    category: "tools",
+    description:
+      "Convert between 20 major currencies using fixed reference exchange rates.",
+    tags: ["currency", "convert", "exchange", "money", "finance"],
+    added: "2026-06-11",
+    thumbnail: null,
+    icon: "fa-solid fa-coins",
+  },
+  {
+    id: "roman-numeral-converter",
+    name: "Roman Numeral Converter",
+    category: "tools",
+    description:
+      "Bidirectional converter between Arabic numbers (1–3999) and Roman numerals.",
+    tags: ["roman", "numeral", "convert", "history", "math"],
+    added: "2026-06-11",
+    thumbnail: null,
+    icon: "fa-solid fa-roman",
+  },
+  {
+    id: "text-to-morse",
+    name: "Text to Morse",
+    category: "tools",
+    description:
+      "Convert text to Morse code and back. Play the encoded message as audio beeps.",
+    tags: ["morse", "code", "encode", "decode", "audio"],
+    added: "2026-06-11",
+    thumbnail: null,
+    icon: "fa-solid fa-signal",
+  },
+  {
+    id: "css-gradient-generator",
+    name: "CSS Gradient Generator",
+    category: "tools",
+    description:
+      "Build linear, radial, or conic gradients with custom stops and copy the CSS.",
+    tags: ["css", "gradient", "color", "design", "generator"],
+    added: "2026-06-11",
+    thumbnail: null,
+    icon: "fa-solid fa-swatchbook",
+  },
+  {
+    id: "readability-score",
+    name: "Readability Score",
+    category: "tools",
+    description:
+      "Analyze text using the Flesch Reading Ease formula and get grade-level feedback.",
+    tags: ["readability", "text", "analysis", "flesch", "writing"],
+    added: "2026-06-11",
+    thumbnail: null,
+    icon: "fa-solid fa-book-open",
+  },
   // ── Games ────────────────────────────────────────────────────
   {
     id: "rock-paper-scissors",

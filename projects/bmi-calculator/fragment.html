@@ -1,0 +1,89 @@
+<div class="project-root" data-project="bmi-calculator">
+  <div class="bmi-wrap">
+    <h2 class="bmi-title">BMI Calculator</h2>
+
+    <div class="bmi-unit-row">
+      <button class="bmi-unit active" data-unit="metric">Metric</button>
+      <button class="bmi-unit" data-unit="imperial">Imperial</button>
+    </div>
+
+    <div class="bmi-form" id="bmi-metric">
+      <label class="bmi-label"
+        >Height (cm)
+        <input
+          class="bmi-input"
+          id="bmi-height-cm"
+          type="number"
+          min="50"
+          max="250"
+          placeholder="170"
+        />
+      </label>
+      <label class="bmi-label"
+        >Weight (kg)
+        <input
+          class="bmi-input"
+          id="bmi-weight-kg"
+          type="number"
+          min="1"
+          max="500"
+          placeholder="70"
+        />
+      </label>
+    </div>
+
+    <div class="bmi-form" id="bmi-imperial" style="display: none">
+      <div class="bmi-row2">
+        <label class="bmi-label"
+          >Height (ft)
+          <input
+            class="bmi-input"
+            id="bmi-height-ft"
+            type="number"
+            min="1"
+            max="8"
+            placeholder="5"
+          />
+        </label>
+        <label class="bmi-label"
+          >Height (in)
+          <input
+            class="bmi-input"
+            id="bmi-height-in"
+            type="number"
+            min="0"
+            max="11"
+            placeholder="7"
+          />
+        </label>
+      </div>
+      <label class="bmi-label"
+        >Weight (lbs)
+        <input
+          class="bmi-input"
+          id="bmi-weight-lb"
+          type="number"
+          min="1"
+          max="1000"
+          placeholder="154"
+        />
+      </label>
+    </div>
+
+    <button class="bmi-calc-btn" id="bmi-calc">Calculate</button>
+
+    <div class="bmi-result" id="bmi-result" style="display: none">
+      <div class="bmi-number" id="bmi-value">—</div>
+      <div class="bmi-category" id="bmi-cat">—</div>
+      <div class="bmi-scale">
+        <div class="bmi-scale-bar">
+          <div class="bmi-scale-marker" id="bmi-marker"></div>
+        </div>
+        <div class="bmi-scale-labels">
+          <span>Underweight</span><span>Normal</span><span>Overweight</span
+          ><span>Obese</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

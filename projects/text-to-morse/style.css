@@ -1,0 +1,126 @@
+[data-project="text-to-morse"] {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+[data-project="text-to-morse"] .morse-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 520px;
+}
+[data-project="text-to-morse"] .morse-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+[data-project="text-to-morse"] .morse-tabs {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  align-self: flex-start;
+}
+[data-project="text-to-morse"] .morse-tab {
+  padding: 0.5rem 1.25rem;
+  background: transparent;
+  color: var(--text2);
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: inherit;
+  transition: background 150ms, color 150ms;
+}
+[data-project="text-to-morse"] .morse-tab:hover { color: var(--text); }
+[data-project="text-to-morse"] .morse-tab.active {
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+}
+[data-project="text-to-morse"] .morse-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+[data-project="text-to-morse"] .morse-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text2);
+}
+[data-project="text-to-morse"] .morse-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 16px;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: 1.5;
+  outline: none;
+  transition: border-color 150ms;
+}
+[data-project="text-to-morse"] .morse-textarea:focus { border-color: var(--accent); }
+[data-project="text-to-morse"] .morse-output-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+[data-project="text-to-morse"] .morse-output-box {
+  position: relative;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem 3.5rem 0.85rem 1rem;
+  min-height: 64px;
+}
+[data-project="text-to-morse"] .morse-output {
+  font-family: monospace;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  word-break: break-all;
+  color: var(--text);
+}
+[data-project="text-to-morse"] .morse-copy {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text2);
+  font-size: 0.72rem;
+  padding: 3px 9px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 150ms, border-color 150ms;
+}
+[data-project="text-to-morse"] .morse-copy:hover { color: var(--text); border-color: var(--text2); }
+[data-project="text-to-morse"] .morse-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+[data-project="text-to-morse"] .morse-play-btn {
+  padding: 0.55rem 1.25rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  color: var(--bg);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 150ms;
+}
+[data-project="text-to-morse"] .morse-play-btn:hover { opacity: 0.85; }
+[data-project="text-to-morse"] .morse-play-note {
+  font-size: 0.75rem;
+  color: var(--text2);
+}

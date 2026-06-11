@@ -1,0 +1,39 @@
+<div class="project-root" data-project="css-gradient-generator">
+  <div class="cgg-wrap">
+    <h2 class="cgg-title">CSS Gradient Generator</h2>
+
+    <div class="cgg-preview" id="cgg-preview"></div>
+
+    <div class="cgg-controls">
+      <div class="cgg-row">
+        <label class="cgg-label">Type</label>
+        <select class="cgg-select" id="cgg-type">
+          <option value="linear">Linear</option>
+          <option value="radial">Radial</option>
+          <option value="conic">Conic</option>
+        </select>
+      </div>
+      <div class="cgg-row" id="cgg-angle-row">
+        <label class="cgg-label"
+          >Angle: <span id="cgg-angle-val">135</span>°</label
+        >
+        <input
+          class="cgg-range"
+          id="cgg-angle"
+          type="range"
+          min="0"
+          max="360"
+          value="135"
+        />
+      </div>
+    </div>
+
+    <div class="cgg-stops" id="cgg-stops"></div>
+    <button class="cgg-add-btn" id="cgg-add">+ Add Stop</button>
+
+    <div class="cgg-output-box">
+      <code class="cgg-css" id="cgg-css"></code>
+      <button class="cgg-copy-btn" id="cgg-copy">Copy CSS</button>
+    </div>
+  </div>
+</div>

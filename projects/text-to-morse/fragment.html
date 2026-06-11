@@ -1,0 +1,52 @@
+<div class="project-root" data-project="text-to-morse">
+  <div class="morse-wrap">
+    <h2 class="morse-title">Text ↔ Morse Code</h2>
+
+    <div class="morse-tabs">
+      <button class="morse-tab active" data-dir="encode">Text → Morse</button>
+      <button class="morse-tab" data-dir="decode">Morse → Text</button>
+    </div>
+
+    <div id="morse-encode-panel" class="morse-panel">
+      <div class="morse-label">Input</div>
+      <textarea
+        class="morse-textarea"
+        id="morse-text-input"
+        rows="4"
+        placeholder="Type your message here…"
+      ></textarea>
+      <div class="morse-output-wrap">
+        <div class="morse-label">Morse Output</div>
+        <div class="morse-output-box">
+          <div class="morse-output" id="morse-code-output"></div>
+          <button class="morse-copy" id="morse-copy-enc" title="Copy">
+            Copy
+          </button>
+        </div>
+      </div>
+      <div class="morse-actions">
+        <button class="morse-play-btn" id="morse-play">▶ Play Audio</button>
+        <span class="morse-play-note">Uses Web Audio API</span>
+      </div>
+    </div>
+
+    <div id="morse-decode-panel" class="morse-panel" style="display: none">
+      <div class="morse-label">Morse Input</div>
+      <textarea
+        class="morse-textarea"
+        id="morse-code-input"
+        rows="4"
+        placeholder="Enter Morse code (use / between words, space between letters)&#10;Example: .... . .-.. .-.. --- / .-- --- .-. .-.. -.."
+      ></textarea>
+      <div class="morse-output-wrap">
+        <div class="morse-label">Decoded Text</div>
+        <div class="morse-output-box">
+          <div class="morse-output" id="morse-text-output"></div>
+          <button class="morse-copy" id="morse-copy-dec" title="Copy">
+            Copy
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

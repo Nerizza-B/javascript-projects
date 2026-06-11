@@ -1,0 +1,55 @@
+<div class="project-root" data-project="currency-converter">
+  <div class="cc-wrap">
+    <h2 class="cc-title">Currency Converter</h2>
+    <p class="cc-note">Fixed reference rates · Base: USD</p>
+
+    <div class="cc-card">
+      <div class="cc-row">
+        <div class="cc-field">
+          <label class="cc-field-label">Amount</label>
+          <input
+            class="cc-input"
+            id="cc-amount"
+            type="number"
+            value="1"
+            min="0"
+            step="any"
+          />
+        </div>
+        <div class="cc-field">
+          <label class="cc-field-label">From</label>
+          <select class="cc-select" id="cc-from"></select>
+        </div>
+      </div>
+
+      <div class="cc-swap-row">
+        <div class="cc-divider-line"></div>
+        <button class="cc-swap" id="cc-swap" title="Swap currencies">⇅</button>
+        <div class="cc-divider-line"></div>
+      </div>
+
+      <div class="cc-row">
+        <div class="cc-field cc-field--result">
+          <label class="cc-field-label">Result</label>
+          <input
+            class="cc-input cc-input--result"
+            id="cc-result"
+            type="number"
+            readonly
+          />
+        </div>
+        <div class="cc-field">
+          <label class="cc-field-label">To</label>
+          <select class="cc-select" id="cc-to"></select>
+        </div>
+      </div>
+
+      <p class="cc-rate" id="cc-rate"></p>
+    </div>
+
+    <div class="cc-rates-section">
+      <p class="cc-rates-label">Quick Rates (vs USD)</p>
+      <div class="cc-grid" id="cc-grid"></div>
+    </div>
+  </div>
+</div>

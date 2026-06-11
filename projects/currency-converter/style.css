@@ -1,0 +1,154 @@
+[data-project="currency-converter"] {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+[data-project="currency-converter"] .cc-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 420px;
+}
+[data-project="currency-converter"] .cc-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+[data-project="currency-converter"] .cc-note {
+  color: var(--text2);
+  font-size: 0.78rem;
+  margin: 0;
+}
+[data-project="currency-converter"] .cc-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+[data-project="currency-converter"] .cc-row {
+  display: flex;
+  gap: 0.75rem;
+}
+[data-project="currency-converter"] .cc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+[data-project="currency-converter"] .cc-field--result { flex: 1.2; }
+[data-project="currency-converter"] .cc-field-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text2);
+}
+[data-project="currency-converter"] .cc-input {
+  padding: 0.65rem 0.75rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 1.05rem;
+  font-family: monospace;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 150ms;
+}
+[data-project="currency-converter"] .cc-input:focus { border-color: var(--accent); }
+[data-project="currency-converter"] .cc-input--result {
+  font-size: 1.15rem;
+  font-weight: 600;
+  background: var(--bg);
+  border-color: var(--border);
+}
+[data-project="currency-converter"] .cc-select {
+  padding: 0.65rem 0.5rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 150ms;
+}
+[data-project="currency-converter"] .cc-select:focus { border-color: var(--accent); }
+[data-project="currency-converter"] .cc-swap-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+[data-project="currency-converter"] .cc-divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+[data-project="currency-converter"] .cc-swap {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--text2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 150ms, border-color 150ms;
+}
+[data-project="currency-converter"] .cc-swap:hover { border-color: var(--text2); color: var(--text); }
+[data-project="currency-converter"] .cc-rate {
+  color: var(--text2);
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: center;
+  min-height: 1.2em;
+  font-family: monospace;
+}
+[data-project="currency-converter"] .cc-rates-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+[data-project="currency-converter"] .cc-rates-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text2);
+  margin: 0;
+}
+[data-project="currency-converter"] .cc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+[data-project="currency-converter"] .cc-grid-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.85rem;
+}
+[data-project="currency-converter"] .cc-grid-item .cc-cname {
+  color: var(--text2);
+  font-size: 0.7rem;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+[data-project="currency-converter"] .cc-grid-item .cc-cval {
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text);
+}

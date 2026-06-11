@@ -1,0 +1,139 @@
+[data-project="css-gradient-generator"] {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+[data-project="css-gradient-generator"] .cgg-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 460px;
+}
+[data-project="css-gradient-generator"] .cgg-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+[data-project="css-gradient-generator"] .cgg-preview {
+  height: 160px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: background 0.2s;
+}
+[data-project="css-gradient-generator"] .cgg-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem;
+}
+[data-project="css-gradient-generator"] .cgg-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+[data-project="css-gradient-generator"] .cgg-label {
+  font-size: 0.82rem;
+  color: var(--text2);
+  min-width: 90px;
+}
+[data-project="css-gradient-generator"] .cgg-select {
+  padding: 0.35rem 0.5rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+[data-project="css-gradient-generator"] .cgg-range {
+  flex: 1;
+  accent-color: var(--accent);
+}
+[data-project="css-gradient-generator"] .cgg-stops {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+[data-project="css-gradient-generator"] .cgg-stop-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
+[data-project="css-gradient-generator"] .cgg-color-input {
+  width: 44px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px;
+  cursor: pointer;
+  background: transparent;
+}
+[data-project="css-gradient-generator"] .cgg-pos-input {
+  width: 60px;
+  padding: 0.3rem 0.5rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+[data-project="css-gradient-generator"] .cgg-stop-row span {
+  color: var(--text2);
+  font-size: 0.82rem;
+}
+[data-project="css-gradient-generator"] .cgg-remove-btn {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--text2);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 4px;
+}
+[data-project="css-gradient-generator"] .cgg-remove-btn:hover { color: var(--text); }
+[data-project="css-gradient-generator"] .cgg-add-btn {
+  align-self: flex-start;
+  padding: 0.4rem 1rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text2);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+[data-project="css-gradient-generator"] .cgg-add-btn:hover { color: var(--text); border-color: var(--text2); }
+[data-project="css-gradient-generator"] .cgg-output-box {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+[data-project="css-gradient-generator"] .cgg-css {
+  font-family: monospace;
+  font-size: 0.82rem;
+  word-break: break-all;
+  color: var(--text2);
+}
+[data-project="css-gradient-generator"] .cgg-copy-btn {
+  align-self: flex-end;
+  padding: 0.4rem 1rem;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}

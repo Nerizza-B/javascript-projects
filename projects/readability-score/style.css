@@ -1,0 +1,111 @@
+[data-project="readability-score"] {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+[data-project="readability-score"] .rs-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 540px;
+}
+[data-project="readability-score"] .rs-header { display: flex; flex-direction: column; gap: 0.35rem; }
+[data-project="readability-score"] .rs-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+[data-project="readability-score"] .rs-sub {
+  color: var(--text2);
+  font-size: 0.82rem;
+  margin: 0;
+}
+[data-project="readability-score"] .rs-textarea {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 150ms;
+}
+[data-project="readability-score"] .rs-textarea:focus { border-color: var(--accent); }
+[data-project="readability-score"] .rs-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+[data-project="readability-score"] .rs-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+@media (max-width: 480px) {
+  [data-project="readability-score"] .rs-cards { grid-template-columns: repeat(2, 1fr); }
+}
+[data-project="readability-score"] .rs-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+[data-project="readability-score"] .rs-card-val {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: monospace;
+  line-height: 1;
+  color: var(--text);
+}
+[data-project="readability-score"] .rs-card-label {
+  font-size: 0.68rem;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+[data-project="readability-score"] .rs-level-box {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+[data-project="readability-score"] .rs-level-label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+  min-height: 1.4em;
+}
+[data-project="readability-score"] .rs-level-bar {
+  height: 10px;
+  background: var(--bg3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+[data-project="readability-score"] .rs-level-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 5px;
+  transition: width 0.5s ease;
+  width: 0%;
+}
+[data-project="readability-score"] .rs-level-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.68rem;
+  color: var(--text2);
+}

@@ -1,0 +1,124 @@
+[data-project="roman-numeral-converter"] {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+[data-project="roman-numeral-converter"] .rn-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 440px;
+}
+[data-project="roman-numeral-converter"] .rn-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+}
+[data-project="roman-numeral-converter"] .rn-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+[data-project="roman-numeral-converter"] .rn-label {
+  font-size: 0.72rem;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+[data-project="roman-numeral-converter"] .rn-row {
+  display: flex;
+  gap: 0.6rem;
+}
+[data-project="roman-numeral-converter"] .rn-input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 150ms;
+}
+[data-project="roman-numeral-converter"] .rn-input:focus { border-color: var(--accent); }
+[data-project="roman-numeral-converter"] .rn-btn {
+  padding: 0.6rem 1.1rem;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  transition: opacity 150ms;
+}
+[data-project="roman-numeral-converter"] .rn-btn:hover { opacity: 0.85; }
+[data-project="roman-numeral-converter"] .rn-result {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+}
+[data-project="roman-numeral-converter"] .rn-result.error {
+  color: var(--text2);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-family: inherit;
+  letter-spacing: 0;
+}
+[data-project="roman-numeral-converter"] .rn-table-wrap {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+[data-project="roman-numeral-converter"] .rn-table-title {
+  font-size: 0.72rem;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.85rem;
+  font-weight: 600;
+}
+[data-project="roman-numeral-converter"] .rn-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+}
+[data-project="roman-numeral-converter"] .rn-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.25rem;
+  gap: 2px;
+}
+[data-project="roman-numeral-converter"] .rn-cell .sym {
+  font-weight: 700;
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--text);
+}
+[data-project="roman-numeral-converter"] .rn-cell .val {
+  font-size: 0.65rem;
+  color: var(--text2);
+}
