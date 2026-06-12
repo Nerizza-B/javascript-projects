@@ -174,6 +174,62 @@ const projects = [
     thumbnail: null,
     icon: "fa-solid fa-book-open",
   },
+  {
+    id: "base64-encoder",
+    name: "Base64 Encoder",
+    category: "tools",
+    description:
+      "Encode and decode Base64 strings with a single click and copy support.",
+    tags: ["base64", "encode", "decode", "developer", "binary"],
+    added: "2026-06-13",
+    thumbnail: null,
+    icon: "fa-solid fa-binary",
+  },
+  {
+    id: "text-case-converter",
+    name: "Case Converter",
+    category: "tools",
+    description:
+      "Convert text between camelCase, snake_case, PascalCase, kebab-case, and more.",
+    tags: ["text", "case", "convert", "camel", "snake", "developer"],
+    added: "2026-06-13",
+    thumbnail: null,
+    icon: "fa-solid fa-text-height",
+  },
+  {
+    id: "regex-tester",
+    name: "Regex Tester",
+    category: "tools",
+    description:
+      "Test regular expressions with live match highlighting and match list.",
+    tags: ["regex", "regexp", "pattern", "test", "developer"],
+    added: "2026-06-13",
+    thumbnail: null,
+    icon: "fa-solid fa-magnifying-glass-plus",
+  },
+  {
+    id: "markdown-previewer",
+    name: "Markdown Previewer",
+    category: "tools",
+    description:
+      "Write Markdown on the left, see the live HTML preview on the right.",
+    tags: ["markdown", "preview", "html", "editor", "developer"],
+    added: "2026-06-13",
+    thumbnail: null,
+    icon: "fa-brands fa-markdown",
+  },
+  {
+    id: "hash-generator",
+    name: "Hash Generator",
+    category: "tools",
+    description:
+      "Generate SHA-256, SHA-1, or SHA-512 hashes from any text using the Web Crypto API.",
+    tags: ["hash", "sha", "crypto", "security", "developer"],
+    added: "2026-06-13",
+    thumbnail: null,
+    icon: "fa-solid fa-fingerprint",
+  },
+
   // ── Games ────────────────────────────────────────────────────
   {
     id: "rock-paper-scissors",

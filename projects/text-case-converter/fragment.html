@@ -1,0 +1,25 @@
+<div class="project-root" data-project="text-case-converter">
+  <div class="tcc-wrap">
+    <h2 class="tcc-title">Text Case Converter</h2>
+    <div class="tcc-input-group">
+      <label class="tcc-label" for="tcc-input">Input Text</label>
+      <textarea class="tcc-area" id="tcc-input" placeholder="Type or paste text here…"></textarea>
+    </div>
+    <div class="tcc-buttons">
+      <button class="tcc-btn" data-case="lower">lowercase</button>
+      <button class="tcc-btn" data-case="upper">UPPERCASE</button>
+      <button class="tcc-btn" data-case="title">Title Case</button>
+      <button class="tcc-btn" data-case="sentence">Sentence case</button>
+      <button class="tcc-btn" data-case="camel">camelCase</button>
+      <button class="tcc-btn" data-case="pascal">PascalCase</button>
+      <button class="tcc-btn" data-case="snake">snake_case</button>
+      <button class="tcc-btn" data-case="kebab">kebab-case</button>
+      <button class="tcc-btn" data-case="constant">CONSTANT_CASE</button>
+    </div>
+    <div class="tcc-output-group">
+      <label class="tcc-label">Output <span class="tcc-active-case" id="tcc-active-case"></span></label>
+      <textarea class="tcc-area" id="tcc-output" readonly placeholder="Converted text appears here…"></textarea>
+      <button class="tcc-copy" id="tcc-copy">Copy</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+[data-project="regex-tester"] {
+  display: flex; justify-content: center;
+  padding: 40px 20px; min-height: 70vh;
+}
+[data-project="regex-tester"] .rx-wrap {
+  width: 100%; max-width: 640px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+[data-project="regex-tester"] .rx-title {
+  font-size: 1.3rem; font-weight: 700; text-align: center; color: var(--text);
+}
+[data-project="regex-tester"] .rx-pattern-row {
+  display: flex; align-items: center; gap: 0;
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+}
+[data-project="regex-tester"] .rx-delim {
+  padding: 0 10px; color: var(--text2); font-family: monospace; font-size: 1.1rem; user-select: none;
+}
+[data-project="regex-tester"] .rx-input {
+  background: transparent; border: none; outline: none; color: var(--text);
+  font-family: monospace; font-size: 0.95rem; padding: 12px 4px;
+}
+[data-project="regex-tester"] .rx-input--pattern { flex: 1; }
+[data-project="regex-tester"] .rx-input--flags { width: 70px; border-left: 1px solid var(--border); padding-left: 10px; }
+[data-project="regex-tester"] .rx-error {
+  color: var(--text); font-size: 0.8rem; min-height: 1em; margin: 0; font-family: monospace;
+}
+[data-project="regex-tester"] .rx-field { display: flex; flex-direction: column; gap: 6px; }
+[data-project="regex-tester"] .rx-label {
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text2);
+}
+[data-project="regex-tester"] .rx-textarea {
+  width: 100%; box-sizing: border-box;
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text); font-size: 0.9rem; padding: 12px 14px; outline: none;
+  font-family: monospace; resize: vertical; transition: border-color 150ms;
+}
+[data-project="regex-tester"] .rx-textarea:focus { border-color: var(--accent); }
+[data-project="regex-tester"] .rx-highlighted {
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 14px; font-family: monospace; font-size: 0.9rem;
+  color: var(--text); white-space: pre-wrap; word-break: break-all; min-height: 40px;
+}
+[data-project="regex-tester"] .rx-mark {
+  background: var(--text); color: var(--bg); border-radius: 2px;
+}
+[data-project="regex-tester"] .rx-stats {
+  font-size: 0.82rem; color: var(--text2);
+}
+[data-project="regex-tester"] .rx-matches {
+  display: flex; flex-direction: column; gap: 4px; max-height: 200px; overflow-y: auto;
+}
+[data-project="regex-tester"] .rx-match-row {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px;
+  font-size: 0.85rem;
+}
+[data-project="regex-tester"] .rx-match-idx { color: var(--text2); min-width: 24px; }
+[data-project="regex-tester"] .rx-match-val { flex: 1; font-family: monospace; color: var(--text); }
+[data-project="regex-tester"] .rx-match-pos { color: var(--text2); font-size: 0.78rem; }
+[data-project="regex-tester"] .rx-more { font-size: 0.8rem; color: var(--text2); margin: 4px 0 0; }

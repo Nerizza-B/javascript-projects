@@ -1,0 +1,29 @@
+<div class="project-root" data-project="base64-encoder">
+  <div class="b64-wrap">
+    <h2 class="b64-title">Base64 Encoder / Decoder</h2>
+    <div class="b64-group">
+      <label class="b64-label" for="b64-input">Input</label>
+      <textarea
+        class="b64-area"
+        id="b64-input"
+        placeholder="Enter text or Base64 string…"
+      ></textarea>
+    </div>
+    <div class="b64-actions">
+      <button class="b64-btn" id="b64-encode">Encode</button>
+      <button class="b64-btn" id="b64-decode">Decode</button>
+      <button class="b64-btn b64-btn--ghost" id="b64-swap">&#8645; Swap</button>
+      <button class="b64-btn b64-btn--ghost" id="b64-copy">Copy Output</button>
+    </div>
+    <div class="b64-group">
+      <label class="b64-label" for="b64-output">Output</label>
+      <textarea
+        class="b64-area"
+        id="b64-output"
+        placeholder="Result appears here…"
+        readonly
+      ></textarea>
+    </div>
+    <p class="b64-status" id="b64-status"></p>
+  </div>
+</div>

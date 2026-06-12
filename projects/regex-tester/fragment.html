@@ -1,0 +1,19 @@
+<div class="project-root" data-project="regex-tester">
+  <div class="rx-wrap">
+    <h2 class="rx-title">Regex Tester</h2>
+    <div class="rx-pattern-row">
+      <span class="rx-delim">/</span>
+      <input class="rx-input rx-input--pattern" id="rx-pattern" type="text" placeholder="pattern" spellcheck="false" autocomplete="off" />
+      <span class="rx-delim">/</span>
+      <input class="rx-input rx-input--flags" id="rx-flags" type="text" placeholder="flags" maxlength="6" spellcheck="false" value="g" />
+    </div>
+    <p class="rx-error" id="rx-error"></p>
+    <div class="rx-field">
+      <label class="rx-label" for="rx-test">Test String</label>
+      <textarea class="rx-textarea" id="rx-test" placeholder="Enter text to test against…" rows="5"></textarea>
+    </div>
+    <div class="rx-highlighted" id="rx-highlighted" aria-hidden="true"></div>
+    <div class="rx-stats" id="rx-stats">No matches</div>
+    <div class="rx-matches" id="rx-matches"></div>
+  </div>
+</div>

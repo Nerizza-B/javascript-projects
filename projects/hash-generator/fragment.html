@@ -1,0 +1,16 @@
+<div class="project-root" data-project="hash-generator">
+  <div class="hg-wrap">
+    <h2 class="hg-title">Hash Generator</h2>
+    <textarea class="hg-input" id="hg-input" rows="4" placeholder="Enter text to hash…"></textarea>
+    <div class="hg-tabs">
+      <button class="hg-tab active" data-algo="SHA-256">SHA-256</button>
+      <button class="hg-tab" data-algo="SHA-1">SHA-1</button>
+      <button class="hg-tab" data-algo="SHA-512">SHA-512</button>
+    </div>
+    <div class="hg-result-row">
+      <input class="hg-result" id="hg-result" type="text" readonly placeholder="Hash will appear here…" />
+      <button class="hg-copy" id="hg-copy">Copy</button>
+    </div>
+    <p class="hg-status" id="hg-status"></p>
+  </div>
+</div>

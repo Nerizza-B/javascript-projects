@@ -1,0 +1,91 @@
+[data-project="base64-encoder"] {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 70vh;
+}
+[data-project="base64-encoder"] .b64-wrap {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+[data-project="base64-encoder"] .b64-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text);
+}
+[data-project="base64-encoder"] .b64-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+[data-project="base64-encoder"] .b64-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text2);
+}
+[data-project="base64-encoder"] .b64-area {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 110px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.9rem;
+  padding: 12px 14px;
+  outline: none;
+  font-family: monospace;
+  resize: vertical;
+  transition: border-color 150ms;
+}
+[data-project="base64-encoder"] .b64-area:focus {
+  border-color: var(--accent);
+}
+[data-project="base64-encoder"] .b64-area[readonly] {
+  opacity: 0.85;
+}
+[data-project="base64-encoder"] .b64-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+[data-project="base64-encoder"] .b64-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 7px;
+  color: var(--bg);
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: opacity 150ms;
+  font-family: inherit;
+}
+[data-project="base64-encoder"] .b64-btn:hover {
+  opacity: 0.85;
+}
+[data-project="base64-encoder"] .b64-btn--ghost {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text2);
+}
+[data-project="base64-encoder"] .b64-btn--ghost:hover {
+  border-color: var(--text2);
+  color: var(--text);
+}
+[data-project="base64-encoder"] .b64-status {
+  font-size: 0.82rem;
+  color: var(--text2);
+  min-height: 1.2em;
+  margin: 0;
+}
+[data-project="base64-encoder"] .b64-status[data-error="1"] {
+  color: var(--text);
+  font-weight: 600;
+}
